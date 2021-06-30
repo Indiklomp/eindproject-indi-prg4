@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: #FFF;
+    font-size: 1.8em;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+arrow{
+    background-image: url(../img/arrow.png);
+    width: 40px;
+    height: 15px;
+    background-size: 100% 100%;
+}
+
+clock{
+    position:absolute;
+    transform: translate(50px, 30px);
+}
+
+score {
+    position:absolute;
+    transform: translate(50px, 30px);
+    position:absolute; top : 50px;
+}
+
+background, dragon, clock, score, ship, creature, startscreen, endscreen, arrow{
+    position: absolute;
+    display: block;
+    box-sizing:border-box;
+}
+
+background {
+    background-image: url('../img/background.png');
+    background-position: bottom center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size:100vw 100vh;
+}
+
+dragon {
+    background-image: url('../img/draak1.png');
+    background-size: contain;
+    width: 250px;
+    height: 102px;
+}
+
+ship {
+    background-image: url('../img/enemyship.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 220px;
+}
+
+creature{
+    background-image: url('../img/creature1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 62px;
+}
+
+.damagedship{
+    background-image: url('../img/ship2.png');
+    width: 400px;
+    height: 180px;
+    position:absolute; top : 100px;
+}
+
+.reddragon{
+    background-image: url('../img/draak3.png');
+    width: 325px;
+    height: 133px;
+}
+
+.invisible{
+    background-image: none;
+    width: 500px;
+    height: 500px;
+}
+
+startscreen div, endscreen div {
+    font-size: 3em;
+    padding-top: 26vh;
+    width: 100vw;
+    text-align: center;
+}
+
+startscreen button, endscreen button {
+    font-family: 'VT323', monospace;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: calc(50vw - 100px);
+    background-color: black;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
